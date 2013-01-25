@@ -9,35 +9,35 @@ TO BE COMPLETED
 There are two main parts to the wider Aqua ecosystem:
 
 * This specification, documenting the programming language and its standard 
-libraries. The canonical copy of the repository can be found on [BitBucket]
-(https://bitbucket.org/JackScottAU/aqua).
+libraries. The canonical copy of the repository can be found on 
+[BitBucket](https://bitbucket.org/JackScottAU/aqua).
 
 * [Fluid](https://bitbucket.org/JackScottAU/fluid), the major implementation of 
 Aqua. This interpreter runs on any POSIX system, is implemented in C, and can be
 used as a CGI handler for web scripting.
 
-Also noteworthy is the [Synergy Operating System]
-(https://bitbucket.org/JackScottAU/synergy-os), a project to create an entire 
-cloud computing infrastructure based on the Aqua ecosystem.
+Also noteworthy is [Synergy](https://bitbucket.org/JackScottAU/synergy-os), a 
+project to create an entire cloud computing infrastructure based on the Aqua 
+ecosystem.
 
 ## Licensing
 
 The entire specification of the Aqua programming language is released under the 
 terms of the ISC license. The full license text follows:
 
-Copyright (c) 2012, [Jack Scott](mailto:jack@jackscott.id.au)
+*Copyright (c) 2012, [Jack Scott](mailto:jack@jackscott.id.au)*
 
 *Permission to use, copy, modify, and/or distribute this software for any purpose
 with or without fee is hereby granted, provided that the above copyright notice
 and this permission notice appear in all copies.*
 
-**THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+*THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
 REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND
 FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
 INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS
 OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
 TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
-THIS SOFTWARE.**
+THIS SOFTWARE.*
 
 ## Random Notes
 Based on Lua, C, PHP and Lisp.
