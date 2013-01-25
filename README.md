@@ -7,7 +7,9 @@ TO BE COMPLETED
 ## The Aqua Project
 
 There are two main parts to the wider Aqua ecosystem:
+
 * This specification, documenting the programming language and its standard libraries. The canonical copy of the repository can be found on [BitBucket](https://bitbucket.org/JackScottAU/aqua).
+
 * [Fluid](https://bitbucket.org/JackScottAU/fluid), the major implementation of Aqua. This interpreter runs on any POSIX system, is implemented in C, and can be used as a CGI handler for web scripting.
 
 Also noteworthy is the [Synergy Operating System](https://bitbucket.org/JackScottAU/synergy-os), a project to create an entire cloud computing infrastructure based on the Aqua ecosystem.
