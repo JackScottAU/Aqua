@@ -28,6 +28,9 @@ through an extensive standard library.
 *  Errors are a first-class data type, meaning that errors can be checked for 
    using standard control structures such as if() statements.
 
+*  The language is dynamically typed. Function definitions can have type 
+   specifications to add constraints if desired.
+
 ## The Aqua Project
 
 There are two main parts to the wider Aqua ecosystem:
@@ -84,3 +87,24 @@ Code to compute and output the 100th fibonacci number:
 
 	//.. is a concatenation operator.
 	print("100th Fibonacci Number:" .. fibonacci(100));
+
+Code to build and a basic HTML page:
+
+	clone aqua.data.xml.* this;
+	clone aqua.console.* this;
+
+	myPage = {
+		"html": {
+			"body": {
+				//keys with values are turned into tags with content/tags inside.
+				"p": "Hello, world!",
+				//keys without values are turned into <img /> style tags.
+				"img src='./nyan-cat.png' alt='Nyan Cat'": null,
+				//values without keys are turned into content.
+				"Don't even need to specify that there isn't a key!"
+			}
+		}
+	};
+
+	renderedPage = convertToHTML(myPage);
+	print(renderedPage);
