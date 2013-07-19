@@ -35,7 +35,7 @@ through an extensive standard library.
 
 There are two main parts to the wider Aqua ecosystem:
 
-*  This specification, documenting the programming language and its standard 
+*  The Aqua specification, documenting the programming language and its standard
    libraries. The canonical copy of the repository can be found on 
    [BitBucket](https://bitbucket.org/JackScottAU/aqua).
 
