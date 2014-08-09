@@ -19,7 +19,7 @@ through an extensive standard library.
    I/O, and graphical user interfaces, amongst others.
 
 *  Also useful for web programming with libraries available for generating 
-   XML/HTML and JSON directly from Aqua data structures.
+   XML, JSON and HTML directly from Aqua data structures.
 
 *  Multiple return values per function.
 
@@ -37,7 +37,7 @@ There are two main parts to the wider Aqua ecosystem:
 
 *  The Aqua specification, documenting the programming language and its standard
    libraries. The canonical copy of the repository can be found on 
-   [BitBucket](https://bitbucket.org/JackScottAU/aqua).
+   [BitBucket](https://github.com/JackScottAU/Aqua).
 
 *  [Fluid](https://bitbucket.org/JackScottAU/fluid), the major implementation of 
    Aqua. This interpreter runs on any POSIX system, is implemented in C, and can
