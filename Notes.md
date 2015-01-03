@@ -105,3 +105,23 @@ unsigned
 void
 volatile
 while 
+
+
+
+
+Program = Set of data/code + list of symbols, so any new code can be put in the acyclic graph in the right place can be translated into an object.
+
+{
+	"Bob": 3,
+	"Carol": 4,
+	"main()": 
+	{
+		"Bob2": ???
+		if() {}
+		return bob;
+	}
+}
+
+each set has several things:
+	- a collection of data items, which may be either code blocks or data items. Each item may have a name or it may not.
+	- an ordered collection of code statements that operate on the 
