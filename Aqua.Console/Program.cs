@@ -1,27 +1,48 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace Aqua.Console
 {
     public class Program
     {
+        private readonly static TraceSource Log = new TraceSource("Aqua.Console");
+
         public static void Main(string[] args)
         {
             // Deal with command-line arguments to find out what we need to do.
+            if (args == null || args.Count() == 0)
+            {
+                PrintHelp();
+                return;
+            }
+            
             switch(args[0])
             {
-                case "":
                 case "help":
                 case "version":
                     PrintHelp();
                     break;
-            }
-            
 
+                case "run":
+                case "debug":
+                case "assemble":
+                case "disassemble":
+                case "compile":
+                    throw new NotImplementedException("These commands not implemented yet.");
+
+                default:
+                    PrintHelp();
+                    break;
+            }
+
+            Log.TraceEvent(TraceEventType.Critical, 0, "CalculatePrimes");
+            
             Thread.Sleep(3000);
         }
 
