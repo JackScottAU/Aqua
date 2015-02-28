@@ -41,8 +41,17 @@
   <ItemGroup>
     <Compile Include="ICompile.cs" />
     <Compile Include="IOptimise.cs" />
+    <Compile Include="IR\Block.cs" />
+    <Compile Include="IR\DataType.cs" />
+    <Compile Include="IR\Expressions\IExpression.cs" />
+    <Compile Include="IR\Function.cs" />
+    <Compile Include="IR\Statements\ExpressionStatement.cs" />
+    <Compile Include="IR\Statements\IfStatement.cs" />
+    <Compile Include="IR\Statements\IStatement.cs" />
     <Compile Include="IR\Module.cs" />
     <Compile Include="IR\Program.cs" />
+    <Compile Include="IR\Statements\WhileStatement.cs" />
+    <Compile Include="IR\Variable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

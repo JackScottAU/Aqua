@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Basically I'm re-writing LLVM for fun.
+Basically I'm re-writing LLVM for fun. Pity me.
 
 ## Features
 

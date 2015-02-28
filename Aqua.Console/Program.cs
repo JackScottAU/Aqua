@@ -11,13 +11,14 @@ namespace Aqua.Console
 {
     public class Program
     {
-        private readonly static TraceSource Log = new TraceSource("Aqua.Console");
+        private static readonly TraceSource Log = new TraceSource("Aqua.Console");
 
         public static void Main(string[] args)
         {
             // Deal with command-line arguments to find out what we need to do.
             if (args == null || args.Count() == 0)
             {
+                Log.TraceEvent(TraceEventType.Verbose, 0, "Printing help due to bad command line arguments.");
                 PrintHelp();
                 return;
             }
@@ -26,6 +27,7 @@ namespace Aqua.Console
             {
                 case "help":
                 case "version":
+                    Log.TraceEvent(TraceEventType.Verbose, 0, "Printing help message due to request from command line.");
                     PrintHelp();
                     break;
 
@@ -34,14 +36,16 @@ namespace Aqua.Console
                 case "assemble":
                 case "disassemble":
                 case "compile":
+                    Log.TraceEvent(TraceEventType.Critical, 0, "These commands not implemented yet.");
                     throw new NotImplementedException("These commands not implemented yet.");
 
                 default:
+                    Log.TraceEvent(TraceEventType.Verbose, 0, "Printing help due to bad command line arguments.");
                     PrintHelp();
                     break;
             }
 
-            Log.TraceEvent(TraceEventType.Critical, 0, "CalculatePrimes");
+            
             
             Thread.Sleep(3000);
         }

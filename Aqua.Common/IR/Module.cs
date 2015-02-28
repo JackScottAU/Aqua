@@ -10,8 +10,8 @@ namespace Aqua.Common.IR
     {
         public string ModuleName { get; set; }
 
-        public string[] Variables { get; set; }
+        public Variable[] GlobalVariables { get; set; }
 
-        public string[] Functions { get; set; }
+        public Function[] Functions { get; set; }
     }
 }
