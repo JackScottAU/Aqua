@@ -40,6 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ICompile.cs" />
+    <Compile Include="IOptimise.cs" />
+    <Compile Include="IR\Module.cs" />
+    <Compile Include="IR\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -7,12 +7,10 @@ using Aqua.Common.IR;
 
 namespace Aqua.Common
 {
-    public interface ICompile
+    public interface IOptimise
     {
-        string LanguageName { get; }
+        string OptimiserName { get; }
 
-        string[] FileExtensions { get; }
-
-        Module Compile(string fileName);
+        Module Optimise(Module input);
     }
 }
